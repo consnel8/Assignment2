@@ -1,0 +1,52 @@
+.header_foot {
+    background-color: darkblue;
+}
+
+.white_text {
+    color: white;
+}
+
+#option_menu {
+    display: inline-block;
+    background-color: lightsalmon;
+    padding-bottom: 600px;
+    padding-right: 80px;
+}
+
+#bg_div {
+    background-color: lightgray;
+}
+
+#bg_chatbox {
+    display: inline-block;
+
+}
+
+#chatbox {
+    display: inline-block; 
+    width: 100%;
+    height: 600px;
+    resize: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#h1_header {
+    display: inline-block;
+    color: coral;
+}
+
+a {
+    color: white;
+    display: inline-block;
+}
+
+#create_button {
+    background-color: darkblue;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
