@@ -72,26 +72,27 @@ public class ChatServer {
         if (roomID.getUsers().get(userId).equals("")){
             roomID.setUserName(userId, comm);
             session.getBasicRemote().sendText("You have joined the chat " + roomID.getCode());
-            broadcastmessage("User " + comm + " has joined the chat" + roomID, userId);
+            broadcastmessage("User " + comm + " has joined the chat" + roomID, roomID, userId, session);
             return;
         }
     }
-    private void broadcastmessage(String comm, ChatRoom roomID, String userIDToExclude) throws IOException {
+    private void broadcastmessage(String comm, ChatRoom roomID, String userIDToExclude, Session session) throws IOException {
         for (String userId : roomID.getUsers().keySet()) {
             if (!userId.equals(userIDToExclude)){
-                Session userSession = getSessionByID(userId);
+                Session userSession = getSessionByID(userId, session);
                 if (userSession.isOpen()){
                     userSession.getBasicRemote().sendText(comm);
                 }
             }
         }
     }
-    private Session getSessionByID(String userId) {
-        for (Session session : chatRooms.get(session.getPathParameters().get("roomID")).getUsers().keySet()) {
+    private Session getSessionByID(String userId, Session session) {
+
+        //for (String id : chatRooms.get("roomID").getUsers().keySet()) {
             if (session.getId().equals(userId)) {
                 return session;
             }
-        }
+        //}
         return null;
     }
 }

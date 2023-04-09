@@ -43,7 +43,7 @@ public class ChatRoom {
             users.put(userID, name);
         }else{ // add new user
             users.put(userID, name);
-        }
+        },
     }
 
     /**
@@ -51,6 +51,7 @@ public class ChatRoom {
      * **/
     public void removeUser(String userID){
         if(users.containsKey(userID)){
+            String name = users.get(userID);
             users.remove(userID);
         }
 
