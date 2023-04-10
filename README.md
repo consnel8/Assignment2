@@ -16,7 +16,7 @@ The Improvements that we have made are
 4. Run the API it will take a bit but then the HTML file will open in your chosen browser with the chat servers.
 
 ## References
-https://www.w3schools.com/html/default.asp
-https://www.w3schools.com/css/default.asp
-https://www.w3schools.com/java/default.asp
+https://www.w3schools.com/html/default.asp \
+https://www.w3schools.com/css/default.asp \
+https://www.w3schools.com/java/default.asp \
 https://www.w3schools.com/js/default.asp
