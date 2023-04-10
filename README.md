@@ -14,3 +14,9 @@ The Improvements that we have made are
 2. When it all downloads make sure you have a .maven file.
 3. Use GlassFish Server with a war exploded and the right domain.
 4. Run the API it will take a bit but then the HTML file will open in your chosen browser with the chat servers.
+
+## References
+https://www.w3schools.com/html/default.asp
+https://www.w3schools.com/css/default.asp
+https://www.w3schools.com/java/default.asp
+https://www.w3schools.com/js/default.asp
